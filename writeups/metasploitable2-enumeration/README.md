@@ -94,6 +94,10 @@ smbclient //192.168.1.143/tmp -N
 - .X0-lock
 - 4566.jsvc_up
 
+
+![SMB tmp share](images/smb-tmp.png)
+
+
 ### Observations
 
 The share exposed internal system-related files and directories without requiring authentication.
