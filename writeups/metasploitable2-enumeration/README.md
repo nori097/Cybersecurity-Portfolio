@@ -61,11 +61,11 @@ ftp 192.168.1.143
 ```
 
 ### Result
-
+![FTP Login](images/ftp-login.png)
 Anonymous login was successfully allowed by the FTP service.
 
 ### Observations
-
+![FTP Enumeration](images/ftp-pwd.png)
 - The FTP server is running vsFTPd 2.3.4.
 - Anonymous authentication was accepted without valid credentials.
 - The session started in the root directory `/`.
