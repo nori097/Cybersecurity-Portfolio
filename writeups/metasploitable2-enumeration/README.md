@@ -76,3 +76,28 @@ Anonymous login was successfully allowed by the FTP service.
 ### Security Impact
 
 Allowing anonymous FTP access may expose sensitive resources or allow unauthorized access to shared content.
+
+## SMB Share Access
+
+Access to the `tmp` SMB share was successfully obtained using anonymous authentication.
+
+### Command Used
+
+```bash
+smbclient //192.168.1.143/tmp -N
+```
+
+### Enumerated Files
+
+- .ICE-unix
+- .X11-unix
+- .X0-lock
+- 4566.jsvc_up
+
+### Observations
+
+The share exposed internal system-related files and directories without requiring authentication.
+
+### Security Impact
+
+Accessible SMB shares may expose sensitive files, system information or allow attackers to interact with internal resources.
