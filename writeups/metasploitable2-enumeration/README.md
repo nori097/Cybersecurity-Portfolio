@@ -95,7 +95,7 @@ smbclient //192.168.1.143/tmp -N
 - 4566.jsvc_up
 
 
-![SMB tmp share](images/smb-tmp.png)
+![SMB tmp share](images/smb-tmp-share.png)
 
 
 ### Observations
