@@ -62,6 +62,8 @@ ftp 192.168.1.143
 
 ### Result
 ![FTP Login](images/ftp-login.png)
+
+
 Anonymous login was successfully allowed by the FTP service.
 
 ### Observations
