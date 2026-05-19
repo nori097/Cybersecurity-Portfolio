@@ -23,3 +23,29 @@ The attacker machine successfully communicated with the target machine using ICM
 
 
 This project focuses on reconnaissance and service enumeration using Kali Linux against Metasploitable2.
+
+## Initial Nmap Scan
+
+An initial Nmap scan was performed against the target machine to identify exposed services and open ports.
+
+### Command Used
+
+```bash
+nmap 192.168.1.143
+
+Open Ports Detected
+21/tcp FTP
+22/tcp SSH
+23/tcp Telnet
+25/tcp SMTP
+80/tcp HTTP
+139/tcp NetBIOS
+445/tcp SMB
+3306/tcp MySQL
+5432/tcp PostgreSQL
+
+Observations
+
+The target machine exposes multiple network services, increasing the attack surface significantly.
+
+Several services appear outdated or insecure, including Telnet and older SMB-related services.
