@@ -49,3 +49,28 @@ Observations
 The target machine exposes multiple network services, increasing the attack surface significantly.
 
 Several services appear outdated or insecure, including Telnet and older SMB-related services.
+
+## FTP Enumeration
+
+The FTP service running on port 21 was tested for anonymous authentication access.
+
+### Command Used
+
+```bash
+ftp 192.168.1.143
+```
+
+### Result
+
+Anonymous login was successfully allowed by the FTP service.
+
+### Observations
+
+- The FTP server is running vsFTPd 2.3.4.
+- Anonymous authentication was accepted without valid credentials.
+- The session started in the root directory `/`.
+- Directory listing did not reveal visible files.
+
+### Security Impact
+
+Allowing anonymous FTP access may expose sensitive resources or allow unauthorized access to shared content.
