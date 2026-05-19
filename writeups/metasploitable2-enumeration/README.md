@@ -11,3 +11,4 @@ Perform basic enumeration against Metasploitable2 in a controlled lab environmen
 ## Attacker Machine
 - Kali Linux
 
+This project focuses on reconnaissance and service enumeration using Kali Linux against Metasploitable2.
