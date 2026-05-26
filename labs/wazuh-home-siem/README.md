@@ -56,6 +56,14 @@ The installation completed successfully and generated the Wazuh dashboard creden
 
 The Wazuh dashboard is accessible through the web interface and is operational.
 
+### Ubuntu Agent Connected
+
+![Ubuntu Agent](screenshots/agent-connected-dashboard.png)
+
+An Ubuntu Desktop virtual machine was successfully connected to the Wazuh SIEM server as an active monitored endpoint.
+
+The agent communication between the Ubuntu Desktop endpoint and the Wazuh manager was verified successfully.
+
 ---
 
 ## Skills Practiced
@@ -65,6 +73,9 @@ The Wazuh dashboard is accessible through the web interface and is operational.
 - SSH usage
 - Virtualization
 - Troubleshooting
+- Wazuh agent deployment
+- Endpoint monitoring
+- Linux endpoint management
 
 ---
 
