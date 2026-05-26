@@ -71,6 +71,14 @@ The agent communication between the Ubuntu Desktop endpoint and the Wazuh manage
 Suricata IDS was integrated with the Wazuh SIEM and successfully detected ICMP ping traffic generated during lab testing.
 
 The generated alerts were forwarded to Wazuh and displayed in the Security Events dashboard.
+
+### Suricata HOME_NET Configuration
+
+![HOME_NET Configuration](screenshots/suricata-home-net-config.png)
+
+The `HOME_NET` variable in the Suricata configuration was intentionally set to the specific IP address of the monitored Ubuntu endpoint instead of the full local network range.
+
+This configuration was used in the lab environment to simulate external traffic targeting a protected host and to make ICMP and network scanning activity easier to detect during testing.
 ---
 
 ## Skills Practiced
