@@ -79,6 +79,21 @@ The generated alerts were forwarded to Wazuh and displayed in the Security Event
 The `HOME_NET` variable in the Suricata configuration was intentionally set to the specific IP address of the monitored Ubuntu endpoint instead of the full local network range.
 
 This configuration was used in the lab environment to simulate external traffic targeting a protected host and to make ICMP and network scanning activity easier to detect during testing.
+
+### Nmap Scan Detection
+
+![Nmap Detection](screenshots/nmap-scan-detection.png)
+
+A Kali Linux virtual machine was used to perform network reconnaissance and port scanning activity against the monitored Ubuntu endpoint using Nmap.
+
+Suricata IDS successfully detected the scan activity and forwarded the generated alerts to the Wazuh SIEM dashboard.
+
+Detected activity included:
+- MSSQL scan attempts
+- Oracle SQL scan attempts
+- MySQL scan attempts
+- VNC scan detection
+- Suspicious inbound scan activity
 ---
 
 ## Skills Practiced
