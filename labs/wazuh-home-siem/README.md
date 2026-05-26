@@ -64,6 +64,13 @@ An Ubuntu Desktop virtual machine was successfully connected to the Wazuh SIEM s
 
 The agent communication between the Ubuntu Desktop endpoint and the Wazuh manager was verified successfully.
 
+### Suricata Traffic Detection
+
+![Suricata Detection](screenshots/suricata-ping-detection.png)
+
+Suricata IDS was integrated with the Wazuh SIEM and successfully detected ICMP ping traffic generated during lab testing.
+
+The generated alerts were forwarded to Wazuh and displayed in the Security Events dashboard.
 ---
 
 ## Skills Practiced
@@ -76,6 +83,10 @@ The agent communication between the Ubuntu Desktop endpoint and the Wazuh manage
 - Wazuh agent deployment
 - Endpoint monitoring
 - Linux endpoint management
+- Suricata IDS integration
+- Network traffic monitoring
+- ICMP traffic detection
+- Security event correlation
 
 ---
 
