@@ -1,89 +1,73 @@
 # Wazuh Home SIEM Lab
 
-## Objective
-Build a home SIEM using Wazuh for log monitoring and threat detection.
-
-## Status
-🚧 In Progress
-
-# Wazuh Home SIEM Lab
 
 ## Overview
 
-This project documents the deployment of a home SIEM environment using Wazuh inside VirtualBox.
+This lab documents my first deployment of a home SIEM environment using Wazuh inside Ubuntu Server running on VirtualBox.
 
-The goal of this lab is to monitor endpoints, collect logs, detect suspicious activity, and practice defensive security monitoring in a controlled environment.
-
----
-
-## Lab Environment
-
-- Wazuh v4.14.5
-- VirtualBox
-- Windows 10 Host
-- Kali Linux
-- Home Network
+The goal of this project is to learn:
+- Linux administration
+- SIEM deployment
+- SSH remote management
+- Security monitoring
+- Basic SOC concepts
 
 ---
 
-## Objectives
+## Environment
 
-- Deploy a working SIEM environment
-- Monitor system and security logs
-- Connect endpoints to Wazuh
-- Detect suspicious activity
-- Generate security alerts
-- Practice blue team fundamentals
+| Component | Technology |
+|---|---|
+| Host OS | Windows 11 |
+| Virtualization | VirtualBox |
+| Server OS | Ubuntu Server |
+| SIEM | Wazuh |
+| Access Method | SSH |
 
 ---
 
-## Features
+## Installation
 
-- Centralized log collection
-- Security event monitoring
-- Alert generation
-- Endpoint monitoring
-- Dashboard visualization
-- Threat detection
+The Wazuh server was installed using the official installation script.
+
+```bash
+curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
+chmod +x wazuh-install.sh
+sudo ./wazuh-install.sh -a -i
+```
+
+The `-i` parameter was required because Ubuntu 24 generated a compatibility warning during installation.
 
 ---
 
 ## Screenshots
 
-### Wazuh Virtual Machine Running
+### Wazuh Installation Finished
 
-![Wazuh VM](screenshots/wazuh-vm-running.png)
+![Installation](screenshots/installation-finished.png)
 
-### Wazuh Dashboard
-
-![Wazuh Dashboard](screenshots/wazuh-dashboard.png)
+The installation completed successfully and generated the Wazuh dashboard credentials.
 
 ---
 
-## Status
+### Wazuh Dashboard
 
-🚧 In Progress
+![Dashboard](screenshots/wazuh-dashboard-home.png)
 
-Currently working on:
-- Connecting agents
-- Generating alerts
-- Detection testing
-- Documentation
+The Wazuh dashboard is accessible through the web interface and is operational.
 
 ---
 
 ## Skills Practiced
 
-- SIEM Deployment
-- Log Analysis
-- Threat Detection
-- Linux Administration
-- Network Monitoring
-- Blue Team Operations
+- Linux administration
+- SIEM deployment
+- SSH usage
 - Virtualization
+- Troubleshooting
 
 ---
 
-## Author
+## Status
 
-GitHub: https://github.com/nori097
+Lab in progress.
