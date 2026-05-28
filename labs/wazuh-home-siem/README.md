@@ -145,7 +145,6 @@ This configuration demonstrates:
 
 ![Wazuh Level 12 Custom Alert](screenshots/wazuh-level12-alert.png)
 
-screenshots/wazuh-level12-alert.png
 
 Custom Wazuh Syscheck/FIM rules were created to detect suspicious file creation activity inside the Linux `/root/` directory.
 
