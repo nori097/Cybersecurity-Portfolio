@@ -125,6 +125,21 @@ This demonstrates:
 - File creation detection
 - File deletion detection
 - Endpoint activity visibility through the SIEM
+
+### Custom YARA Detection Rules
+
+![Custom YARA Rules](screenshots/custom-yara-rules.png)
+
+Custom Wazuh rules were configured to process YARA scan results and generate alerts when suspicious files matched defined malware signatures.
+
+Additional custom Syscheck/FIM rules were also created to improve visibility of monitored file activity inside the lab environment.
+
+This configuration demonstrates:
+- Custom Wazuh rule creation
+- YARA integration
+- Malware signature detection
+- XML rule customization
+- SIEM alert tuning
 ---
 
 ## Skills Practiced
