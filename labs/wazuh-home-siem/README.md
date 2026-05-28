@@ -94,6 +94,37 @@ Detected activity included:
 - MySQL scan attempts
 - VNC scan detection
 - Suspicious inbound scan activity
+
+### File Integrity Monitoring (FIM) Configuration
+
+![FIM Configuration](screenshots/fim-configuration.png)
+
+Wazuh File Integrity Monitoring (FIM) was configured to monitor the `/home/ubuntuagent/documents` directory in real time.
+
+The monitoring configuration was set with:
+- `check_all="yes"` to verify all file attributes
+- `report_changes="yes"` to log detected modifications
+- `realtime="yes"` to generate alerts instantly when files are created, modified, or deleted
+
+This configuration was used to simulate endpoint monitoring and suspicious file activity detection in the lab environment.
+
+### File Integrity Monitoring Events
+
+![FIM Events](screenshots/fim-file-monitoring-events.png)
+
+Wazuh File Integrity Monitoring (FIM) successfully detected file activity inside the monitored `/home/ubuntuagent/documents` directory.
+
+During testing:
+- A file named `prueba.txt` was created
+- The same file was later deleted
+
+Both actions generated real-time alerts in the Wazuh dashboard with different alert levels.
+
+This demonstrates:
+- Real-time file monitoring
+- File creation detection
+- File deletion detection
+- Endpoint activity visibility through the SIEM
 ---
 
 ## Skills Practiced
