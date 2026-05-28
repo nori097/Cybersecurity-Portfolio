@@ -140,7 +140,17 @@ This configuration demonstrates:
 - Malware signature detection
 - XML rule customization
 - SIEM alert tuning
----
+
+### Custom Critical Alert Detection (Level 12)
+
+![Wazuh Level 12 Custom Alert](screenshots/wazuh-level12-alert.png)
+
+screenshots/wazuh-level12-alert.png
+
+Custom Wazuh Syscheck/FIM rules were created to detect suspicious file creation activity inside the Linux `/root/` directory.
+
+A custom rule was configured in `local_rules.xml` to generate a **Level 12 critical alert** whenever a file is created inside `/root/`, simulating potentially malicious or unauthorized activity on a monitored Linux endpoint.
+
 
 ## Skills Practiced
 
